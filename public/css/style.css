@@ -1,0 +1,32 @@
+html { 
+    overflow-y: scroll;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    background: #F8F8F8;
+}
+
+#lista-contatos { 
+    margin-bottom: 30px; 
+}
+
+form button { 
+    margin-top: 25px; 
+}
+
+form .form-group:first-child { 
+    padding-left: 0; 
+}
+
+.navbar {
+    background: #ffffff;
+}
+
+/* rodape codigo */
+footer {
+    border-bottom: 5px solid #00C39A;
+    background: #333333;
+    float:left;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Lista de Contatos",
+  "description": "Lista de contatos simples",
+  "main": "app.js",
+  "authors": [
+    "Pedro Franco"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
