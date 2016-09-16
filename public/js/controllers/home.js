@@ -3,6 +3,12 @@ var listaContatos = angular.module('listaContatos', []);
 //carrega
 listaContatos.controller('mainController', function($scope, $http){
     
+    data = new Date();
+
+    //dados para o site
+    $scope.autor = "Pedro Franco";
+    $scope.copyright = "@" + data.getFullYear() + " todos os direitos reservados.";
+
     var refresh = function(){
         $http.get('/contatos')
         .success(function(data){

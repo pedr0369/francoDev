@@ -26,7 +26,8 @@ form .form-group:first-child {
 
 /* rodape codigo */
 footer {
-    border-bottom: 5px solid #00C39A;
+    border-bottom: 10px solid #00C39A;
     background: #333333;
-    float:left;
+    padding: 20px;
+    color: white;
 }
