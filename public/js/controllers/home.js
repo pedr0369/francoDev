@@ -1,3 +1,4 @@
+//angular front-end
 var listaContatos = angular.module('listaContatos', []);
 
 //carrega
@@ -6,10 +7,13 @@ listaContatos.controller('mainController', function($scope, $http){
     data = new Date();
 
     //dados para o site
-    $scope.autor = "Pedro Franco";
-    $scope.copyright = "@" + data.getFullYear() + " todos os direitos reservados.";
+    $scope.dados = {
+        "autor": "Pedro Franco",
+        "copyright": "@" + data.getFullYear() + " todos os direitos reservados.",
+        "nomeSite": "FrancoDev"
+    };
 
-    var refresh = function(){
+    /*var refresh = function(){
         $http.get('/contatos')
         .success(function(data){
             $scope.contatos = data;
@@ -65,5 +69,5 @@ listaContatos.controller('mainController', function($scope, $http){
         .success(function(response){
             refresh();
         });
-    };
+    };*/
 });

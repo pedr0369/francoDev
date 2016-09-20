@@ -8,6 +8,19 @@ body {
     background: #F8F8F8;
 }
 
+* {
+    font-family: arial;
+}
+
+.font_google {
+    font-family: offside;
+}
+
+a {
+    color: #324B59;
+    font-weight: 600;
+}
+
 #lista-contatos { 
     margin-bottom: 30px; 
 }
@@ -20,8 +33,46 @@ form .form-group:first-child {
     padding-left: 0; 
 }
 
+/* nav */
 .navbar {
     background: #ffffff;
+}
+
+.navbar-brand {
+    font-family: offside;
+    font-size: 30px;
+}
+
+/* aside */
+aside {
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.autor-img {
+    padding: 20px;
+    height: 250px;
+    width:100%;
+    margin-left: calc(50% - 50%);
+}
+
+.autor-description p, .autor-description h3{
+    font-family: offside;
+    text-align: center;
+}
+
+.autor-img img {
+    width: 100%;
+    border-radius: 150px;
+    height: 100%;
+} 
+
+/* content */
+.content {
+    background:#ffffff;
+    padding: 20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 
 /* rodape codigo */
@@ -30,4 +81,13 @@ footer {
     background: #333333;
     padding: 20px;
     color: white;
+}
+
+/* pagina contato */
+.botao_envia {
+    background-color: #00C39A;
+    color: white;
+    font-weight: 700;
+    border-bottom: 8px solid #333;
+    font-size: 18px;
 }

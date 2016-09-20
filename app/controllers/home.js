@@ -1,14 +1,15 @@
 //controllers/home
 module.exports = function(app){
 
-    Contato = app.models.Contato;
+    //Contato = app.models.Contato;
     var controller = {};
 
     //chama a pagina
     controller.index = function(req, res){
         res.render('index');
     };
-
+    
+    /*
     //busca
     controller.busca = function(req, res){
         Contato.find(function(err, contatos){
@@ -77,6 +78,7 @@ module.exports = function(app){
             });
         });
     };
+    */
 
     return controller;
 }

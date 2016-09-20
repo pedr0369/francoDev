@@ -6,7 +6,7 @@ module.exports = function(app){
     app.route('/')
         .get(controller.index);
 
-    app.route('/contatos')
+    /*app.route('/contatos')
         .get(controller.busca)
         .post(controller.cria);
 
@@ -14,4 +14,5 @@ module.exports = function(app){
         .put(controller.atualiza)
         .get(controller.edita)
         .delete(controller.deleta);
+        */
 }
