@@ -11,6 +11,14 @@ listaContatos.controller('mainController', function($scope, $http){
         "autor": "Pedro Franco",
         "copyright": "@" + data.getFullYear() + " todos os direitos reservados.",
         "nomeSite": "FrancoDev",
+        "portfolio_skills": {
+            "frontEnd": {
+                {"nome": "HTML5", "src": "img/icons/html.svg"},
+                {"nome": "CSS3", "src": "img/icons/css.svg"},
+                {"nome": "Bootstrap","src": "img/icons/java.svg"}
+            },
+            ""
+        }
     };
 
     /*var refresh = function(){

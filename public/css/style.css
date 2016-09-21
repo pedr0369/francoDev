@@ -91,3 +91,34 @@ footer {
     border-bottom: 8px solid #333;
     font-size: 18px;
 }
+
+/* pagina contato */
+.ladoS {
+    background: #333;
+    color: #ffffff;
+    border-bottom: 8px solid #00C39A;
+}
+
+.ladoN {
+    background: white;
+    box-shadow: 1px 1px 4px #333;
+    color: #333333;
+    border-bottom: 8px solid #333;
+}
+
+.ladoS h2 {
+    color: #00C39A;
+}
+
+.ladoN h2, .ladoS h2 {
+    font-family: offside;
+    padding-bottom: 15px;
+}
+
+.ladoS p{
+    font-size: 15px;
+}
+
+.ladoS a{
+    color: #00C39A;
+}
