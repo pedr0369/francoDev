@@ -15,17 +15,21 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/postagens">Postagens</a></li>
-        <li><a href="/contatar">Contato</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contato">Contato</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 <ol class="breadcrumb">
-	<li class="active">
-        <span class="glyphicon glyphicon-home"></span> Home
-  </li>
+    <% if(url == "/"){ %>
+        <li class="active">
+            <span class="glyphicon glyphicon-home"></span> Home
+        </li>
+    <% }else { %>
+        <li><span class="glyphicon glyphicon-home"></span> <a href="/">Home</a></li>
+        <li class="active"><%= url %></li>
+    <% } %>
 </ol>
-
 <div class="container">

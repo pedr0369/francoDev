@@ -1,12 +1,13 @@
 //controllers/home
+var url = require('url');
 module.exports = function(app){
-
     //Contato = app.models.Contato;
     var controller = {};
 
     //chama a pagina
     controller.index = function(req, res){
-        res.render('index');
+        var path = url.parse(req.url).pathname;
+        res.render('index', {url: path});
     };
     
     /*

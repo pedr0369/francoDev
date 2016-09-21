@@ -10,7 +10,7 @@ listaContatos.controller('mainController', function($scope, $http){
     $scope.dados = {
         "autor": "Pedro Franco",
         "copyright": "@" + data.getFullYear() + " todos os direitos reservados.",
-        "nomeSite": "FrancoDev"
+        "nomeSite": "FrancoDev",
     };
 
     /*var refresh = function(){
