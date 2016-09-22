@@ -16,33 +16,51 @@
           Express, AngularJS, NodeJS) e suas tecnologias. 
         </p>
     </div>
-    <img src="../../public/img/icons" class="col-sm-2">
 
     <div class="row jumbotron ladoN">
         <h2 class="text-center">SKILLS</h2>
-
+        
         <div class="row" style="margin-top:10px;">
-            <div class"col-sm-10 col-sm-offset-1">
-                <img src="img/icons/html.svg" class="col-sm-2">
-                <img src="img/icons/css.svg" class="col-sm-2">
-                <img src="img/icons/bootstrap.svg" class="col-sm-2">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h4 class="text-center">WEB</h4>
+                <img ng-repeat="icons in skills.web" src="{{icons.src}}.svg" class="{{skills.classe}}" />
+                <i class="fa fa-wordpress fa-3x col-sm-2"></i>
+            </div>
+        </div>
+        
+        <div class="row" style="margin-top:20px;">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h4 class="text-center">Linguagens que utilizei academicamente</h4>
+                <img ng-repeat="icons in skills.academica" src="{{icons.src}}.svg" class="{{skills.classe}}">
             </div>
         </div>
 
-        <div class="row" style="margin-top:10px;">
-            <div class"col-sm-10 col-sm-offset-1 pull-left">
-                <img src="img/icons/javascript.svg" class="col-sm-2">
-                <img src="img/icons/jquery.svg" class="col-sm-2">
-                <img src="img/icons/angular.svg" class="col-sm-2">
+        <div class="row" style="margin-top:20px;">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h4 class="text-center">Sistemas Operacionais já utilizados</h4>
+                <img ng-repeat="icons in skills.so" src="{{icons.src}}.svg" class="{{skills.classe}}">
             </div>
         </div>
-
-        <div class="row" style="margin-top:10px;">
-            <div class"col-sm-10 col-sm-offset-1 pull-left">
-                <img src="img/icons/java.svg" class="col-sm-2">
+        
+        <div class="row" style="margin-top:20px;">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h4 class="text-center">Metodologias Ágeis</h4>
+                <img ng-repeat="icons in skills.metodologias" src="{{icons.src}}.svg" class="{{skills.classe}}">
             </div>
         </div>
-
+        
+        <div class="row" style="margin-top:20px;">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h4 class="text-center">Controle de versão</h4>
+                <img ng-repeat="icons in skills.versionamento" src="{{icons.src}}.svg" class="{{skills.classe}}">
+                <i class="fa fa-github fa-3x col-sm-2"></i>
+                <i class="fa fa-bitbucket fa-3x col-sm-2"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row jumbotron ladoS">
+        <h2 class="text-center">MEUS PROJETOS</h2>
     </div>
 
 </div>

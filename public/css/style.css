@@ -106,16 +106,13 @@ footer {
     border-bottom: 8px solid #333;
 }
 
-.ladoS h2 {
-    color: #00C39A;
-}
-
 .ladoN h2, .ladoS h2 {
     font-family: offside;
     padding-bottom: 15px;
+    color: #00C39A;
 }
 
-.ladoS p{
+.ladoS p, .ladoN p{
     font-size: 15px;
 }
 

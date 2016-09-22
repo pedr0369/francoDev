@@ -11,14 +11,39 @@ listaContatos.controller('mainController', function($scope, $http){
         "autor": "Pedro Franco",
         "copyright": "@" + data.getFullYear() + " todos os direitos reservados.",
         "nomeSite": "FrancoDev",
-        "portfolio_skills": {
-            "frontEnd": {
-                {"nome": "HTML5", "src": "img/icons/html.svg"},
-                {"nome": "CSS3", "src": "img/icons/css.svg"},
-                {"nome": "Bootstrap","src": "img/icons/java.svg"}
-            },
-            ""
-        }
+    };
+    
+    $scope.skills = {
+        
+        classe: "col-sm-2",
+        
+       web: [           
+            {src: "img/icons/html"},
+            {src: "img/icons/css"},
+            {src: "img/icons/bootstrap"},
+            {src: "img/icons/mysql"},
+            {src: "img/icons/javascript"},
+            {src: "img/icons/jquery"},
+            {src: "img/icons/angular"},
+            {src: "img/icons/php"},
+       ],
+        academica: [
+            {src: "img/icons/c"},
+            {src: "img/icons/csharp"},
+            {src: "img/icons/java"}
+        ],
+        so: [
+            {src: "img/icons/linux"},
+            {src: "img/icons/windows"}
+        ],
+        metodologias: [
+            {src: "img/icons/scrum"},
+            {src: "img/icons/mvc"}
+        ],
+        versionamento: [
+            {src: "img/icons/git"}
+        ],
+        
     };
 
     /*var refresh = function(){
