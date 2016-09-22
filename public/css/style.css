@@ -92,7 +92,7 @@ footer {
     font-size: 18px;
 }
 
-/* pagina contato */
+/* pagina portfolio */
 .ladoS {
     background: #333;
     color: #ffffff;
@@ -106,7 +106,7 @@ footer {
     border-bottom: 8px solid #333;
 }
 
-.ladoN h2, .ladoS h2 {
+.ladoN h2, .ladoS h2, .ladoS h4 {
     font-family: offside;
     padding-bottom: 15px;
     color: #00C39A;
@@ -114,8 +114,25 @@ footer {
 
 .ladoS p, .ladoN p{
     font-size: 15px;
+    text-align: justify;
 }
 
 .ladoS a{
     color: #00C39A;
+}
+
+.sites_Projects {
+    border-bottom: 10px solid #00c39a;
+    box-shadow: 1px 1px 4px #333;
+    width: calc(50% - 20px);
+    margin: 10px;
+    font-family: offside;
+}
+
+#botao_mais {
+    background: #00c39a;
+    color: #333;
+    border-bottom: 7px solid #333;
+    top: 20px;
+    position: relative;
 }
