@@ -66,13 +66,15 @@
     
     <div class="row jumbotron ladoN">
         <h2 class="text-center">PROJETOS QUE PARTICIPEI</h2>
-        <div class="col-sm-6 sites_Projects" ng-repeat="project in otherProjects">
-            <h4 ng-bind="project.nome" class="text-center"></h4>
-            <a href="{{project.url}}" target="_blank"><img src="{{project.src}}" style="width:100%;" height="200px"></a>
+        <div class="row">
+            <div class="col-sm-6 sites_Projects" ng-repeat="project in otherProjects">
+                <h4 ng-bind="project.nome" class="text-center"></h4>
+                <a href="{{project.url}}" target="_blank"><img src="{{project.src}}" style="width:100%;" height="200px"></a>
+            </div>
         </div>
         
         <div class="row">
-            <button class="btn btn-block" id="botao_mais" href="/contato">Quer conhecer mais serviços? Deixe seu contato. Clique aqui.</button>
+            <a class="btn btn-block" id="botao_mais" href="/contato">Quer conhecer mais serviços? Deixe seu contato. Clique aqui.</a>
         </div>
     </div>
 

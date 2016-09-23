@@ -1,7 +1,9 @@
 //controllers/home
 var url = require('url');
+var fs = require('fs');
+
 module.exports = function(app){
-    //Contato = app.models.Contato;
+    Post = app.models.Post;
     var controller = {};
 
     //chama a pagina
@@ -9,6 +11,50 @@ module.exports = function(app){
         var path = url.parse(req.url).pathname;
         res.render('index', {url: path});
     };
+    
+    controller.post = function(req, res){
+        var path = url.parse(req.url).pathname;
+        res.render('Post', {url: path});
+    };
+    
+    controller.criaPost = function(req, res){
+        Post.create({
+            titulo: req.body.titulo,
+            autor: req.body.autor,
+            texto: req.body.texto
+        }, function(err, contato){
+            if(err)
+                res.send(err);
+            else{
+                console.log('contato criado');
+            }
+            Post.find(function(err, contatos){
+                if(err)
+                    res.send(err);
+                res.json(contatos);
+            });
+        });
+        console.log(req.body);
+    };
+    
+     //cria
+    /*controller.cria = function(req, res){
+        Contato.create({
+            nome: req.body.nome,
+            email: req.body.email,
+            telefone: req.body.telefone,
+            done: false
+        }, function(err, contato){
+            if(err)
+                res.send(err);
+            Contato.find(function(err, contatos){
+                if(err)
+                    res.send(err);
+                res.json(contatos);
+            });
+        });
+    };*/
+    
     
     /*
     //busca

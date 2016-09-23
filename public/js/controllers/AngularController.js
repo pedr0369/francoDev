@@ -59,6 +59,18 @@ listaContatos.controller('mainController', function($scope, $http){
         {src: "img/Particip_sites/nutriri.jpg", url: "http://nutriri.com.br", nome: "Nutriri"},
         {src: "img/Particip_sites/seminovo.jpg", url: "http://seminovo.com.br", nome: "Semi Novo Certo"},
     ];
+    
+    $scope.criarPost = function(){
+        $http.post('/criaPost', $scope.formPost)
+        .success(function(data){
+            $scope.formPost = {};
+            $scope.contatos = data;
+            console.log(data);
+        })
+        .error(function(){
+            console.log('Erro ' + data);
+        });
+    }
 
     /*var refresh = function(){
         $http.get('/contatos')

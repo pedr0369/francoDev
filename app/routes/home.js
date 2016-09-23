@@ -5,7 +5,13 @@ module.exports = function(app){
 
     app.route('/')
         .get(controller.index);
-
+    
+    app.route('/post')
+        .get(controller.post);
+    
+    app.route('/criaPost')
+        .post(controller.criaPost);
+    
     /*app.route('/contatos')
         .get(controller.busca)
         .post(controller.cria);
