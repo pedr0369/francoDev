@@ -1,6 +1,4 @@
-html { 
-    overflow-y: scroll;
-}
+html { overflow-y: scroll; }
 
 body { 
     margin: 0;
@@ -8,35 +6,23 @@ body {
     background: #F8F8F8;
 }
 
-* {
-    font-family: arial;
-}
+* { font-family: arial; }
 
-.font_google {
-    font-family: offside;
-}
+.font_google { font-family: offside; }
 
 a {
     color: #324B59;
     font-weight: 600;
 }
 
-#lista-contatos { 
-    margin-bottom: 30px; 
-}
+#lista-contatos { margin-bottom: 30px; }
 
-form button { 
-    margin-top: 25px; 
-}
+form button { margin-top: 25px; }
 
-form .form-group:first-child { 
-    padding-left: 0; 
-}
+form .form-group:first-child { padding-left: 0; }
 
 /* nav */
-.navbar {
-    background: #ffffff;
-}
+.navbar { background: #ffffff; }
 
 .navbar-brand {
     font-family: offside;
@@ -73,6 +59,24 @@ aside {
     background:#ffffff;
     padding: 20px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.chamadaPost {
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 8px solid #00C39A;
+    width: calc(50% - 20px);
+    margin: 10px;
+}
+
+.chamadaPost img {
+    padding: 5  px;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+
+.chamadaPost p {
+    padding: 5px;
 }
 
 /* rodape codigo */
@@ -117,9 +121,7 @@ footer {
     text-align: justify;
 }
 
-.ladoS a{
-    color: #00C39A;
-}
+.ladoS a{ color: #00C39A; }
 
 .sites_Projects {
     border-bottom: 10px solid #00c39a;

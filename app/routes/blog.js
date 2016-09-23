@@ -5,4 +5,7 @@ module.exports = function(app){
 
     app.route('/blog')
         .get(controller.index);
+    
+    app.route('/postagem')
+        .get(controller.getPost);
 }

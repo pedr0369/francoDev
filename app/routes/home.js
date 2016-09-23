@@ -9,8 +9,9 @@ module.exports = function(app){
     app.route('/post')
         .get(controller.post);
     
-    app.route('/criaPost')
-        .post(controller.criaPost);
+    app.route('/postagem')
+        .post(controller.criaPost)
+        .get(controller.getPost);
     
     /*app.route('/contatos')
         .get(controller.busca)

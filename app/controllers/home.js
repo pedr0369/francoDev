@@ -12,6 +12,14 @@ module.exports = function(app){
         res.render('index', {url: path});
     };
     
+    controller.getPost = function(req, res){
+        Post.find(function(err, contatos){
+            if(err)
+                res.send(err);
+            res.json(contatos);
+        });
+    };   
+    
     controller.post = function(req, res){
         var path = url.parse(req.url).pathname;
         res.render('Post', {url: path});
@@ -35,26 +43,7 @@ module.exports = function(app){
             });
         });
         console.log(req.body);
-    };
-    
-     //cria
-    /*controller.cria = function(req, res){
-        Contato.create({
-            nome: req.body.nome,
-            email: req.body.email,
-            telefone: req.body.telefone,
-            done: false
-        }, function(err, contato){
-            if(err)
-                res.send(err);
-            Contato.find(function(err, contatos){
-                if(err)
-                    res.send(err);
-                res.json(contatos);
-            });
-        });
-    };*/
-    
+    };    
     
     /*
     //busca
@@ -90,24 +79,6 @@ module.exports = function(app){
             if(err)
                 res.send(err)
             res.json(contato);
-        });
-    };
-
-    //cria
-    controller.cria = function(req, res){
-        Contato.create({
-            nome: req.body.nome,
-            email: req.body.email,
-            telefone: req.body.telefone,
-            done: false
-        }, function(err, contato){
-            if(err)
-                res.send(err);
-            Contato.find(function(err, contatos){
-                if(err)
-                    res.send(err);
-                res.json(contatos);
-            });
         });
     };
 

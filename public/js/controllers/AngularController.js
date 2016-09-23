@@ -61,16 +61,23 @@ listaContatos.controller('mainController', function($scope, $http){
     ];
     
     $scope.criarPost = function(){
-        $http.post('/criaPost', $scope.formPost)
+        $http.post('/postagem', $scope.formPost)
         .success(function(data){
             $scope.formPost = {};
-            $scope.contatos = data;
-            console.log(data);
+            $scope.msg = {mensagem: "Post Criado com Sucesso", estado: true};
         })
         .error(function(){
-            console.log('Erro ' + data);
+            $scope.msg = {mensagem: "Erro ao criar o post. Tente Novamente", estado: false};
         });
-    }
+    };
+    
+    var getPosts = function(){
+        $http.get('/postagem')
+        .then(function(response){
+            $scope.posts = response.data;
+        });
+    };
+    getPosts();
 
     /*var refresh = function(){
         $http.get('/contatos')
