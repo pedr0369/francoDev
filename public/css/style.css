@@ -67,6 +67,7 @@ aside {
     border-bottom: 8px solid #00C39A;
     width: calc(50% - 20px);
     margin: 10px;
+    height: 420px;
 }
 
 .chamadaPost img {
@@ -77,6 +78,7 @@ aside {
 
 .chamadaPost p {
     padding: 5px;
+    text-align: justify;
 }
 
 /* rodape codigo */

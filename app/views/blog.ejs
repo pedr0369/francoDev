@@ -7,7 +7,7 @@
         <div class="col-sm-6 chamadaPost">
             <h3 ng-bind="post.titulo" class="text-center"></h3>
             <img src="img/Particip_sites/bruna.jpg" width="100%" height="200px">
-            <p ng-bind="post.texto"></p>
+            <p ng-bind="post.texto.substr(0, 180) + '...'"></p><a>Continue lendo...</a>
         </div>
     </div>
 </div>
