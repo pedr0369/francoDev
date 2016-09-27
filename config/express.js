@@ -4,13 +4,16 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
+//var crypto = require('crypto');
+//console.log(crypto.createHash('md5').update('Pedro').digest('hex'));
+
 module.exports = function(){
     var app = express();
-
+    
     app.use(express.static('./public'));
     app.set('view engine', 'ejs');
     app.set('views', './app/views');
-
+    
     app.use(logger('dev'));                                 
     app.use(bodyParser.urlencoded({'extended':'true'}));      
     app.use(bodyParser.json());

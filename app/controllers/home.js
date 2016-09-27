@@ -9,6 +9,7 @@ module.exports = function(app){
     //chama a pagina
     controller.index = function(req, res){
         var path = url.parse(req.url).pathname;
+        console.log(req.session.get());
         res.render('index', {url: path});
     };
     
@@ -24,6 +25,11 @@ module.exports = function(app){
         var path = url.parse(req.url).pathname;
         res.render('Post', {url: path});
     };
+    
+    controller.login = function(req, res){
+        var path = url.parse(req.url).pathname;
+        res.render('login', {url: path});
+    }
     
     controller.criaPost = function(req, res){
         Post.create({

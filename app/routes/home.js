@@ -9,6 +9,9 @@ module.exports = function(app){
     app.route('/post')
         .get(controller.post);
     
+    app.route('/login')
+        .get(controller.login)
+    
     app.route('/postagem')
         .post(controller.criaPost)
         .get(controller.getPost);

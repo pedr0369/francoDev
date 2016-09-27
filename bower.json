@@ -1,6 +1,6 @@
 {
-  "name": "Lista de Contatos",
-  "description": "Lista de contatos simples",
+  "name": "FrancoDev",
+  "description": "Site de portfolio de Pedro Franco",
   "main": "app.js",
   "authors": [
     "Pedro Franco"

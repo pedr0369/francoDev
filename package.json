@@ -1,7 +1,8 @@
 {
-  "name": "Lista de Contatos",
-  "version": "0.0.0",
-  "description": "Lista de contatos simples",
+  "name": "francoDev",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Site de portolio de Pedro Franco",
   "main": "app.js",
   "author": "Pedro Franco",
   "dependencies": {
@@ -13,5 +14,9 @@
     "mongodb": "^2.2.10",
     "mongoose": "^4.6.0",
     "morgan": "^1.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pedr0369/francodev.git"
   }
 }
