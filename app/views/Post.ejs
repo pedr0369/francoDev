@@ -10,7 +10,7 @@
         <div class="alert alert-danger"><span ng-bind="msg.mensagem"></span></div>
     </div>
     
-    <form ng-submit="criarPost()">
+    <form ng-submit="criarPost()" enctype="multipart/form-data">
         <div class="form-group">
             <label for="titulo">Título: </label>
             <input type="text" class="form-control" placeholder="Insira o título do post" ng-model="formPost.titulo" required>
@@ -28,7 +28,7 @@
         
         <div class="form-group col-sm-6">
             <label for="chamada">Imagem de chamada: </label>
-            <input type="file" class="form-control" name="datafile" ng-model="formPost.chamada">
+            <input type="file" class="form-control" name="chamada" ng-model="formPost.chamada">
         </div>
         
         <div class="form-group col-sm-8 col-sm-offset-2">

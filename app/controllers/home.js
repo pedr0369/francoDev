@@ -9,7 +9,6 @@ module.exports = function(app){
     //chama a pagina
     controller.index = function(req, res){
         var path = url.parse(req.url).pathname;
-        console.log(req.session.get());
         res.render('index', {url: path});
     };
     
@@ -35,7 +34,7 @@ module.exports = function(app){
         Post.create({
             titulo: req.body.titulo,
             autor: req.body.autor,
-            texto: req.body.texto
+            texto: req.body.texto,
         }, function(err, contato){
             if(err)
                 res.send(err);
